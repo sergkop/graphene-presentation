@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8"/>
+
+		<title>The effect of substrate steps on QHE in epitaxial graphene</title>
+
+		<meta name="description" content="The effect of substrate steps on QHE in epitaxial graphene"/>
+		<meta name="author" content="Sergey Kopylov"/>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<link rel="stylesheet" href="css/reveal.min.css"/>
+		<link rel="stylesheet" href="css/theme/default.css" id="theme"/>
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css"/>
+
+		<style>
+            .reveal p.header { color:#99ff99; font-weight:bold; font-size: 48px; }
+            .reveal section img { background: none; border:none; box-shadow:none; margin:0; }
+            .reveal p.small { font-size: 24px; }
+        </style>
+		
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+                <section>
+                    <br>
+                    <p class="header">The effect of substrate steps on QHE</p>
+                    <p class="header">in epitaxial graphene</p>
+                    <br>
+                    <p><b style="color:#ffff99;">Sergey Kopylov</b>, Vladimir Fal'ko</p>
+                    <p>Lancaster University</p>
+                </section>
+
+                <section>
+                    <p class="header">SiC surface steps</p>
+                    <br>
+                    <img src="img/steps.png" width="500"/>
+                    <p class="small">N. Camara, <i>et al.</i>, J. Phys. D <b>43</b> (2010)</p>
+                 </section>
+
+                <section>
+                    <p class="header">SiC surface steps</p>
+                    <br>
+                    <img src="img/setup.png"/>
+
+                    <!--p class="fragment">... BLG/2LG ...</p-->
+                </section>
+
+                <section>
+                    <p class="header">Plan</p>
+                    <br>
+                    <ol>
+                        <li style="color: #ff7744;">Charge transfer between graphene<br> and donors in SiC</li>
+                        <li>Gate voltage vs. sample variation</li>
+                        <li>\(B=0\)</li>
+                        <li>QHE in BLG and 2LG</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <p class="header">Charge transfer in MLG</p>
+                    <img src="img/mlg.png" width="500"/>
+                </section>
+
+                <section>
+                    <p class="header">Charge transfer in MLG</p>
+                    <img src="img/mlg_deriv.png" width="700"/>
+                    $$ \gamma [A_{eff} - e^2 d n/\epsilon_0 - \varepsilon_F(n) ] = n $$
+                    <div class="fragment">
+                        <br/>
+                        $$ A_{eff} = A - \left(\frac{e^2 d}{\epsilon_0} + \frac{1}{\gamma}\right) n_g$$
+                    </div>
+                </section>
+
+                <section>
+                    <p class="header">Charge transfer in BLG</p>
+                    <img src="img/blg.png" width="400"/>
+                    $$ \gamma [A_{eff} - e^2 d n/\epsilon_0 - \varepsilon_F(n) ] = n $$
+                </section>
+
+                <section>
+                    <p class="header">Charge transfer in 2LG</p>
+                    <img src="img/2lg.png" width="600"/>
+                    $$ \gamma [A_{eff} - e^2d(n_t+n_b)/\epsilon_0 - \varepsilon_F(n_b) ] = n_t+n_b $$
+                    <br/>
+                    $$ \varepsilon_F(n_b) = \varepsilon_F(n_t) + \frac{e^2h n_t}{\epsilon_0} $$
+                </section>
+
+                <section>
+                    <p class="header">Plan</p>
+                    <br>
+                    <ol>
+                        <li>Charge transfer between graphene<br> and donors in SiC</li>
+                        <li style="color: #ff7744;">Gate voltage vs. sample variation</li>
+                        <li>\(B=0\)</li>
+                        <li>QHE in BLG and 2LG</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <p class="header">Gate voltage vs. sample variation</p>
+
+                    <div class="row">
+                        <div class="span5">
+                            <p>Gate voltage</p>
+                            \(n_g\) or \(n_1\)
+                        </div>
+                        <div class="span5">
+                            <p>Sample</p>
+                            \(n_0\), \(n_g=0\)
+                        </div>
+                    </div>
+                    <br/>
+                    $$ \gamma(n_0) [A_{eff}(n_g) - e^2 d n/\epsilon_0 - \varepsilon_F(n) ] = n $$
+                </section>
+
+                <section>
+                    <p class="header">Plan</p>
+                    <br>
+                    <ol>
+                        <li>Charge transfer between graphene<br> and donors in SiC</li>
+                        <li>Gate voltage vs. sample variation</li>
+                        <li style="color: #ff7744;">\(B=0\)</li>
+                        <li>QHE in BLG and 2LG</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <p class="header">\(B=0\) in 2LG</p>
+                    <img src="img/n(h).png" width="600"/>
+                    $$n(h)$$
+                </section>
+
+                <section>
+                    <p class="header">\(B=0\)</p>
+                    <img src="img/n(n0).png" width="600"/>
+                    $$n(n_0)$$
+                </section>
+
+                <section>
+                    <p class="header">\(B=0\)</p>
+                    <div class="row">
+                        <div class="span6">
+                            <img src="img/n(n0).png" width="380"/>
+                            $$n(n_0)$$
+                        </div>
+                        <div class="span5 offset1">
+                            <img src="img/n(n1).png" width="380"/>
+                            $$n(n_1)$$
+                        </div>
+                    </div>
+                    <br/>
+                    <p>Gate voltage vs. sample variation is not important.</p>
+                </section>
+
+                <section>
+                    <p class="header">Electrostatic potential</p>
+                    <img src="img/ePhi.png" width="550"/>
+                    $$e\Phi = \frac{e^2 d}{\epsilon_0} (n_t+n_b) + \frac{e^2 h}{\epsilon_0} n_t$$
+                </section>
+
+                <section>
+                    <p class="header">Plan</p>
+                    <br>
+                    <ol>
+                        <li>Charge transfer between graphene<br> and donors in SiC</li>
+                        <li>Gate voltage vs. sample variation</li>
+                        <li>\(B=0\)</li>
+                        <li style="color: #ff7744;">QHE</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <section>
+                        <p class="header">QHE in MLG</p>
+                        <br>
+                        <div class="row">
+                            <div class="span7">
+                                <img src="img/n_B_lt.png" width="420"/>
+                            </div>
+                            <div class="span4 offset1">
+                                <img src="img/mlg_nu_lt_2.png" width="380"/>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <p class="header">QHE in MLG</p>
+                        <br>
+                        <div class="row">
+                            <div class="span7">
+                                <img src="img/n_B_eq.png" width="420"/>
+                            </div>
+                            <div class="span4 offset1">
+                                <img src="img/mlg_nu_eq_2.png" width="380"/>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <p class="header">QHE in MLG</p>
+                        <br>
+                        <div class="row">
+                            <div class="span7">
+                                <img src="img/n_B_gt.png" width="420"/>
+                            </div>
+                            <div class="span4 offset1">
+                                <img src="img/mlg_nu_gt_2.png" width="380"/>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <p class="header">QHE in MLG</p>
+                        <br>
+                        <div class="row">
+                            <div class="span7">
+                                <img src="img/B(n)_mlg.png" width="420"/>
+                            </div>
+                            <div class="span4 offset1">
+                                <img src="img/mlg_nu_eq_2.png" width="380"/>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <section>
+                    <p class="header">QHE in 2LG top layer</p>
+                    <br>
+                    <div class="row">
+                        <div class="span7">
+                            <img src="img/B(n)_2lg_top.png" width="420"/>
+                        </div>
+                        <div class="span4 offset1">
+                            <img src="img/2lg_top.png" width="380"/>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <p class="header">QHE in 2LG bottom layer</p>
+                    <br>
+                    <div class="row">
+                        <div class="span7">
+                            <img src="img/B(n)_2lg_bottom.png" width="420"/>
+                        </div>
+                        <div class="span4 offset1">
+                            <img src="img/2lg_bottom.png" width="380"/>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <p class="header">QHE in BLG</p>
+                    <br>
+                    <div class="row">
+                        <div class="span7">
+                            <img src="img/B(n)_blg.png" width="420"/>
+                        </div>
+                        <div class="span4 offset1">
+                            <img src="img/blg_diagr.png" width="360"/>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <p class="header">Conclusion</p>
+                    <br>
+                    <p>QHE state in BLG and 2LG patches<br/>
+                    is inconsistent with QHE in MLG.</p>
+                </section>
+            </div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+			
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+                MathJax.Hub.Rerender();// event.previousSlide, event.currentSlide, event.indexh, event.indexv
+                
+                if (event.indexh==16){
+                    
+                }
+            } );
+
+		</script>
+
+	</body>
+</html>
